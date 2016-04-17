@@ -15,26 +15,20 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083cb50265fec;Password=263fb5f7;persistsecurityinfo=True</Value>
     </Setting>
-    <Setting Name="RemoteFtpServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ftp://waws-prod-db3-025.ftp.azurewebsites.windows.net</Value>
-    </Setting>
-    <Setting Name="RemoteServerUser" Type="System.String" Scope="User">
-      <Value Profile="(Default)">WebAppBookmakerFeed20160413071258\paulowensmith1968</Value>
-    </Setting>
-    <Setting Name="RemoteServerPassword" Type="System.String" Scope="User">
-      <Value Profile="(Default)">PS?pos68</Value>
-    </Setting>
     <Setting Name="MaxFilesToLoad" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
-    </Setting>
-    <Setting Name="RemoteFtpPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">/site/wwwroot/files/</Value>
     </Setting>
     <Setting Name="LocalDownloadPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\#myFiles\Downloaded\</Value>
     </Setting>
+    <Setting Name="ProcessStreamsSwitch" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
     <Setting Name="ProcessStreamNumber" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">5</Value>
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="CommitInsertsEvery" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
     </Setting>
   </Settings>
 </SettingsFile>

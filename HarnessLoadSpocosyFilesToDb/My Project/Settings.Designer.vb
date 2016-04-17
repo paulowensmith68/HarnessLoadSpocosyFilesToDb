@@ -91,42 +91,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("ftp://waws-prod-db3-025.ftp.azurewebsites.windows.net")>  _
-        Public Property RemoteFtpServer() As String
-            Get
-                Return CType(Me("RemoteFtpServer"),String)
-            End Get
-            Set
-                Me("RemoteFtpServer") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("WebAppBookmakerFeed20160413071258\paulowensmith1968")>  _
-        Public Property RemoteServerUser() As String
-            Get
-                Return CType(Me("RemoteServerUser"),String)
-            End Get
-            Set
-                Me("RemoteServerUser") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("PS?pos68")>  _
-        Public Property RemoteServerPassword() As String
-            Get
-                Return CType(Me("RemoteServerPassword"),String)
-            End Get
-            Set
-                Me("RemoteServerPassword") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("10")>  _
         Public Property MaxFilesToLoad() As Integer
             Get
@@ -134,18 +98,6 @@ Namespace My
             End Get
             Set
                 Me("MaxFilesToLoad") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("/site/wwwroot/files/")>  _
-        Public Property RemoteFtpPath() As String
-            Get
-                Return CType(Me("RemoteFtpPath"),String)
-            End Get
-            Set
-                Me("RemoteFtpPath") = value
             End Set
         End Property
         
@@ -163,13 +115,37 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("5")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property ProcessStreamsSwitch() As Boolean
+            Get
+                Return CType(Me("ProcessStreamsSwitch"),Boolean)
+            End Get
+            Set
+                Me("ProcessStreamsSwitch") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
         Public Property ProcessStreamNumber() As Integer
             Get
                 Return CType(Me("ProcessStreamNumber"),Integer)
             End Get
             Set
                 Me("ProcessStreamNumber") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("200")>  _
+        Public Property CommitInsertsEvery() As Integer
+            Get
+                Return CType(Me("CommitInsertsEvery"),Integer)
+            End Get
+            Set
+                Me("CommitInsertsEvery") = value
             End Set
         End Property
     End Class
