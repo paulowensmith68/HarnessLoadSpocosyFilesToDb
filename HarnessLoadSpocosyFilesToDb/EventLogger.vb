@@ -35,16 +35,6 @@ Public Class EventLogger
         ' Write to Event Logs
         Try
 
-            ''register the Application as an Event Source
-            'If Not EventLog.SourceExists(My.Settings.AdapterName) Then
-            ' EventLog.CreateEventSource(My.Settings.AdapterName, My.Settings.AdapterName + "_Log")
-            'End If
-
-            '' Log the entry with the Windows Event Logs.
-            'objEventLog.Source = My.Settings.AdapterName
-            'entry = My.Settings.AdapterName + ": " + entry
-            'objEventLog.WriteEntry(entry, eventType)
-
             ' Always write to text log file in application directory
             strLogFile = My.Settings.ProcessLogPath & "LoadSpocosyFiles_Log_File_Stream" + My.Settings.ProcessStreamNumber.ToString + Format(Now, "_yyyy_MM_dd") & ".txt"
             FileOpen(intFileNumber, strLogFile, OpenMode.Append)
